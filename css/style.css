@@ -1,0 +1,169 @@
+
+body{
+    background-color: #44546A;
+    color:white;
+}
+div{
+    
+}
+h1{
+    
+    font-family: 'Gothic A1', sans-serif;
+    font-size:3em;
+    
+}
+h2{
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    
+    padding-right: 5%;
+
+    height: 100vh;
+    background-color: #262626;
+    grid-template-areas:  
+    "p1 "
+    "p6"
+    "p2 "
+    "p3 "
+    "p4 "
+    "p5"
+    "p7";
+    
+
+    
+}
+#title{
+    
+    grid-area: p1;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+#aboutminh{
+    padding-top: 45px;
+    grid-area: p2;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#showcase{
+    padding-top: 45px;
+    grid-area: p3;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#links{
+    padding-top: 45px;
+    grid-area: p4;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#contact{
+    padding-top: 45px;
+    grid-area: p5;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+#text{
+    border-radius: 0px 40px 40px 0px;
+    padding-left: 10px;
+    grid-area: p6;
+    background-color: #44546A;
+ 
+}
+#footer{
+    grid-area: p7;
+
+
+    
+}
+
+a:link {color: white;background-color: rgba(255, 0, 0, 0);}
+a:visited{color:white;background-color:rgb(255, 0, 0);}
+a:hover { background-color:rgba(0, 0, 255, 0);}
+a:active {background-color:rgba(255, 255, 255, 0.226);}
+
+
+
+
+
+@media screen and (min-width: 800px){
+    body{background-color: :#bbb;}
+    
+body{
+    background-color: #44546A;
+    color:white;
+}
+div{
+    
+}
+header{
+    
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: 100%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    background-color: #262626;
+    grid-template-areas:  
+    "p1 p1 p1 p1"
+    "p2 p3 p4 p5"
+    "p2 p3 p4 p5"
+    "p6 p6 p0 p0"
+    "p7 p7 p7 p7";
+    
+
+    
+}
+#title{
+    
+    grid-area: p1;
+    text-align: center;
+    
+
+}
+#aboutminh{
+    padding-top: 45px;
+    grid-area: p2;
+    text-align: center;
+}
+#showcase{
+    padding-top: 45px;
+    grid-area: p3;
+    text-align: center;
+}
+#links{
+    padding-top: 45px;
+    grid-area: p4;
+    text-align: center;
+}
+#contact{
+    padding-top: 45px;
+    grid-area: p5;
+    text-align: center;
+}
+#text{
+    border-radius: 0px 40px 40px 0px;
+    padding-left: 10px;
+    grid-area: p6;
+    background-color: #44546A;
+    font-size: large;
+ 
+}
+#footer{
+ grid-area: p7;
+    text-align: center;
+
+    
+}
+    }
