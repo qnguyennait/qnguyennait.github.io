@@ -1,169 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 
-body{
-    background-color: #44546A;
-    color:white;
-}
-div{
-    
-}
-h1{
-    
-    font-family: 'Gothic A1', sans-serif;
-    font-size:3em;
-    
-}
-h2{
-    font-family: 'Baskervville', serif;
-    font-style: italic;
-}
-.nav{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,1fr);
-    
-    padding-right: 5%;
-
-    height: 100vh;
-    background-color: #262626;
-    grid-template-areas:  
-    "p1 "
-    "p6"
-    "p2 "
-    "p3 "
-    "p4 "
-    "p5"
-    "p7";
-    
-
-    
-}
-#title{
-    
-    grid-area: p1;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+/*font-family: 'Libre Franklin', sans-serif;*/
+body {
+    background-color: white;
+    color: rgb(97, 97, 234);
 
 }
-#aboutminh{
-    padding-top: 45px;
-    grid-area: p2;
+
+header {
+    border-left: 3px solid white;
+    padding-top: 20px;
+    background-image: url(../images/header.png);
+    text-align: left;
     text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-size: 135px;
+    color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:20px ;   
+
 }
-#showcase{
-    padding-top: 45px;
-    grid-area: p3;
+
+nav>div {
+    
+    background-color: rgb(118, 186, 242);
+    border: 3px solid white;
     text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
-}
-#links{
-    padding-top: 45px;
-    grid-area: p4;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
-}
-#contact{
-    padding-top: 45px;
-    grid-area: p5;
-    text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 30px bold white;
+    color: white;
+    height: fit-content;
     
 }
-#text{
-    border-radius: 0px 40px 40px 0px;
-    padding-left: 10px;
-    grid-area: p6;
-    background-color: #44546A;
+
+main {
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-left: 0;
+    /* height: 1fr; */
+    font-size: 23px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: bold;
+}
+
+footer {
+    background-image: url(../images/footer.jpg);
+    /* background-size: cover; */
+    /* <------ */
+    background-repeat: no-repeat;
+    /* height: 1fr; */
+    background-size: cover;
+    /* <------ */
  
-}
-#footer{
-    grid-area: p7;
-
-
     
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    height:fit-content;
+}
+img{
+    height: 260px;
+}
+.link {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 
-a:link {color: white;background-color: rgba(255, 0, 0, 0);}
-a:visited{color:white;background-color:rgb(255, 0, 0);}
-a:hover { background-color:rgba(0, 0, 255, 0);}
-a:active {background-color:rgba(255, 255, 255, 0.226);}
 
 
+@media screen and (min-width: 800px) {
 
 
+    .container {
+        display: grid;
+       
+        height:100vh;
+        border-collapse: collapse;
+        grid-template-columns: repeat(1);
+        grid-template-rows: repeat(4,1fr);
+        padding-left: 0px;
+        margin-left: 0;
 
-@media screen and (min-width: 800px){
-    body{background-color: :#bbb;}
-    
-body{
-    background-color: #44546A;
-    color:white;
-}
-div{
-    
-}
-header{
-    
-}
-.nav{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-    height: 100%;
-    padding-right: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 90vh;
-    background-color: #262626;
-    grid-template-areas:  
-    "p1 p1 p1 p1"
-    "p2 p3 p4 p5"
-    "p2 p3 p4 p5"
-    "p6 p6 p0 p0"
-    "p7 p7 p7 p7";
-    
-
-    
-}
-#title{
-    
-    grid-area: p1;
-    text-align: center;
-    
-
-}
-#aboutminh{
-    padding-top: 45px;
-    grid-area: p2;
-    text-align: center;
-}
-#showcase{
-    padding-top: 45px;
-    grid-area: p3;
-    text-align: center;
-}
-#links{
-    padding-top: 45px;
-    grid-area: p4;
-    text-align: center;
-}
-#contact{
-    padding-top: 45px;
-    grid-area: p5;
-    text-align: center;
-}
-#text{
-    border-radius: 0px 40px 40px 0px;
-    padding-left: 10px;
-    grid-area: p6;
-    background-color: #44546A;
-    font-size: large;
- 
-}
-#footer{
- grid-area: p7;
-    text-align: center;
-
-    
-}
     }
+
+    header {
+        /* height: 2em; */
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        padding-left: 15vw;
+        text-align: left;
+
+      
+        
+    }
+
+    nav {
+        padding-right: 10px;
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1);
+        
+
+    }
+
+     main {
+        display: flex;
+        margin-right: 10px;
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+        margin-top: -4vh;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    footer {
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        grid-row-start: 4;
+        grid-row-end: span 1;
+        height: 8vh;
+    }
+    #mainpic{
+        
+        display: flex;
+        flex-direction: flow;
+        flex-wrap: wrap;
+        gap: -30px;
+        padding: 0px    ;
+        margin:0px;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        gap: 0px;
+
+    }
+    #mainpic>div{
+        padding: 0px    ;
+        margin:0px;
+
+
+    }
+    main #verpic{
+       
+        
+       
+    }
+    main #horpic{
+        width: 400PX ;
+
+    }
+    #home{
+        
+    }
+
+
+
+
+
+
+
+}
